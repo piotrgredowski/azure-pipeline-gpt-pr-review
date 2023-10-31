@@ -8,6 +8,7 @@ name: Create Release
 
 env:
   PACKAGE_NAME: gpt_pr_review
+  AUTHOR_NAME: piotrgredowski
 
 jobs:
   autorelease:
@@ -51,6 +52,6 @@ jobs:
           body_path: '.github/RELEASE-TEMPLATE.md'
           draft: true
           files: |
-            ${{env.PACKAGE_NAME}}-${{env.PROJECT_VERSION}}.vsix
+            ${{env.AUTHOR_NAME}}.${{env.PACKAGE_NAME}}-${{env.PROJECT_VERSION}}.vsix
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

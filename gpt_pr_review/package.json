@@ -1,6 +1,6 @@
 {
   "name": "gpt_pr_review",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "binary-extensions": "^2.2.0",
     "node-fetch": "^2.6.6",
     "openai": "^3.2.1",
-    "simple-git": "^3.17.0"
+    "simple-git": "^3.17.0",
+    "tfx-cli": "^0.16.0"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.3",

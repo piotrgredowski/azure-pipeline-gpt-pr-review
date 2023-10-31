@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
-  "id": "gpt_pr_review",
+  "id": "gpt-pr-preview",
   "name": "GPT Pull Request Review",
-  "version": "0.12.3",
+  "version": "0.0.3",
   "publisher": "piotrgredowski",
   "galleryFlags": ["Public", "Preview"],
   "targets": [
