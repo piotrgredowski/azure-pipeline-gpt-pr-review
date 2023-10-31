@@ -8,13 +8,13 @@ Before using this task, ensure that the build service has permissions to contrib
 
 ### Give permission to the build service agent
 
-![contribute_to_pr](https://github.com/mlarhrouch/azure-pipeline-gpt-pr-review/blob/main/images/contribute_to_pr.png?raw=true)
+![contribute_to_pr](https://github.com/piotrgredowski/azure-pipeline-gpt-pr-review/blob/main/images/contribute_to_pr.png?raw=true)
 
 ### Allow Task to access the system token
 
 Depending on the type of pipeline you are using, follow one of the two steps below:
 
-#### Yaml pipelines 
+#### Yaml pipelines
 
 Add a checkout section with persistCredentials set to true.
 
@@ -24,11 +24,11 @@ steps:
   persistCredentials: true
 ```
 
-#### Classic editors 
+#### Classic editors
 
 Enable the option "Allow scripts to access the OAuth token" in the "Agent job" properties.
 
-![allow_access_token](https://github.com/mlarhrouch/azure-pipeline-gpt-pr-review/blob/main/images/allow_access_token.png?raw=true)
+![allow_access_token](https://github.com/piotrgredowski/azure-pipeline-gpt-pr-review/blob/main/images/allow_access_token.png?raw=true)
 
 ### Azure Open AI service
 
