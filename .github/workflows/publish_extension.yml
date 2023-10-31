@@ -23,5 +23,5 @@ jobs:
         run: npm install -g tfx-cli
 
       - name: Publish
-        run: tfx extension publish --manifest-globs vss-extension.json --share-with piotrgredowski
+        run: tfx extension publish --token ${{ secrets.MARKETPLACE_PAT }} --manifest-globs vss-extension.json --share-with piotrgredowski
 
