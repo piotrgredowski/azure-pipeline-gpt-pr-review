@@ -22,6 +22,9 @@ jobs:
       - name: Install rfx
         run: npm install -g tfx-cli
 
+      - name: build
+        run: cd gpt_pr_review && npm run build
+
       - name: Publish
         run: tfx extension publish --token ${{ secrets.MARKETPLACE_PAT }} --manifest-globs vss-extension.json --share-with piotrgredowski
 

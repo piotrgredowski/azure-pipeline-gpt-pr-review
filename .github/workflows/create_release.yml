@@ -43,6 +43,9 @@ jobs:
       - name: list packages
         run: cd gpt_pr_review && ls -al node_modules
 
+      - name: build
+        run: cd gpt_pr_review && npm run build
+
       - name: Build extension
         run: tfx extension create --manifest-globs ./vss-extension.json
 
