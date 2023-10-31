@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "id": "GPTPullRequestReview",
+  "id": "gpt_pr_review",
   "name": "GPT Pull Request Review",
   "version": "0.12.3",
   "publisher": "piotrgredowski",
@@ -10,7 +10,7 @@
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
-  "description": "A task that review Pull Request using GPT model from OpenAI. Forked from mustaphalarhrouch",
+  "description": "A task that review Pull Request using GPT model from OpenAI. Forked from Mustapha Larhrouch",
   "categories": ["Azure Pipelines"],
   "icons": {
     "default": "images/icon.png"
@@ -18,7 +18,7 @@
   "tags": ["OpenAI", "GPT", "pullRequest", "review"],
   "files": [
     {
-      "path": "GPTPullRequestReview"
+      "path": "gpt_pr_review"
     }
   ],
   "repository": {
@@ -32,11 +32,11 @@
   },
   "contributions": [
     {
-      "id": "GPTPullRequestReview",
+      "id": "gpt_pr_review",
       "type": "ms.vss-distributed-task.task",
       "targets": ["ms.vss-distributed-task.tasks"],
       "properties": {
-        "name": "GPTPullRequestReview"
+        "name": "gpt_pr_review"
       }
     }
   ]

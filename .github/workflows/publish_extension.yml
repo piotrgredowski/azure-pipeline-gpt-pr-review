@@ -1,0 +1,27 @@
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+
+name: Deploy Extension
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install the dependencies
+        run: cd gpt_pr_review && npm ci
+
+      - name: Install rfx
+        run: npm install -g tfx-cli
+
+      - name: Publish
+        run: tfx extension publish --manifest-globs vss-extension.json --share-with piotrgredowski
+
