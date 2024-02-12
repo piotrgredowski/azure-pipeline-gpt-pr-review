@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "gpt-pr-preview",
   "name": "GPT Pull Request Review",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "piotrgredowski",
   "galleryFlags": ["Public", "Preview"],
   "targets": [
